@@ -24,8 +24,8 @@
     />
   </head>
 
-  <body class="min-h-screen bg-stone-100 p-8 text-slate-950">
-    <div class="container mx-auto min-h-screen rounded-xl bg-stone-200">
+  <body class="min-h-screen bg-stone-50 p-8 text-slate-950">
+    <div class="container mx-auto min-h-screen rounded-xl bg-stone-100">
       <header
         class="flex items-center gap-x-3 rounded-t-xl border-b bg-white p-6"
       >
@@ -152,6 +152,59 @@
               </ul>
             </div>
           </div>
+        </div>
+        <!-- Summary of reservation -->
+        <div class="p-6 text-sm">
+          <div
+            class="mb-4 flex h-52 flex-col justify-end rounded-lg bg-[url(./assets/img/biarritz.jpg)] bg-cover pt-2 text-white"
+          >
+            <div class="px-4 py-1 backdrop-blur">
+              <h3 class="text-base font-bold">
+                H&ocirc;tel &VerticalBar; Biarritz Palace
+              </h3>
+              <p>6 beds &#9679; 2 Bathroom &#9679; 3 rooms</p>
+            </div>
+          </div>
+          <h3 class="mb-2 border-b pb-2 text-base font-bold">
+            Summary of your reservation
+          </h3>
+          <div class="mb-2 flex justify-between">
+            <p>Arrival</p>
+            <p class="font-medium">Monday, November 3, 2025</p>
+          </div>
+          <div class="mb-2 flex justify-between">
+            <p>Departure</p>
+            <p class="font-medium">Sunday, November 17, 2025</p>
+          </div>
+          <div class="mb-4 flex justify-between">
+            <p>Reservation(s)</p>
+            <p class="font-medium">3</p>
+          </div>
+          <!-- Billing details -->
+          <h3 class="mb-2 border-b pb-2 text-base font-bold">
+            Billing details
+          </h3>
+          <div class="mb-2 flex justify-between">
+            <p>Number of nights</p>
+            <p class="font-medium">13 nights</p>
+          </div>
+          <div class="mb-2 flex justify-between">
+            <p>Price per night</p>
+            <p class="font-medium">&dollar;700</p>
+          </div>
+          <div class="mb-2 flex justify-between">
+            <p>Cleaning fees</p>
+            <p class="font-medium">&dollar;1200</p>
+          </div>
+          <div class="mb-4 flex justify-between">
+            <p class="font-medium">Total</p>
+            <p class="font-medium">&dollar;5700</p>
+          </div>
+          <button
+            class="w-full animate-pulse rounded bg-blue-500 py-2 font-bold text-white transition-colors hover:animate-none hover:bg-blue-600 hover:shadow-lg"
+          >
+            Confirm and pay &dollar;5700
+          </button>
         </div>
       </main>
     </div>

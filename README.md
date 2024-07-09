@@ -1,20 +1,16 @@
-
 # Biarritz
 
 Booking pay check
 
-
 ## Screenshots
 
-![Biarritz](https://via.placeholder.com/468x300?text=Coming+Soon)
-
+![Biarritz](./preview.png)
 
 ## Tech Stack
 
 **Client:** HTML, CSS, TailwindCSS
 
 **Local Server:** Node
-
 
 ## Run Locally
 
@@ -41,7 +37,7 @@ Start Tailwindcss
 ```bash
   npm run start
 ```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-

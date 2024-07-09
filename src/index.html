@@ -24,7 +24,7 @@
     />
   </head>
 
-  <body class="min-h-screen bg-stone-50 p-8 text-slate-950">
+  <body class="min-h-screen bg-stone-50 p-2 text-slate-950 sm:p-8">
     <div class="container mx-auto rounded-xl bg-stone-100">
       <header
         class="flex items-center gap-x-3 rounded-t-xl border-b bg-white p-6"
@@ -32,7 +32,9 @@
         <img src="./assets/img/logo.png" alt="Logo" class="w-6" />
         <h1 class="text-xl font-bold">Biarritz Palace</h1>
       </header>
-      <main class="grid grid-cols-[2fr_1fr] grid-rows-1">
+      <main
+        class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 lg:grid-cols-[2fr_1fr] lg:grid-rows-1"
+      >
         <div class="bg-white p-6 text-sm">
           <a
             href="#"
@@ -43,7 +45,9 @@
           <h2 class="mb-4 text-lg font-bold">Payment method</h2>
           <div class="mb-6 rounded-lg border p-4">
             <h4 class="mb-6 text-sm font-bold">Saved cards</h4>
-            <div class="grid grid-cols-2 grid-rows-2 gap-2 p-2">
+            <div
+              class="grid grid-cols-1 grid-rows-4 gap-2 p-2 lg:grid-cols-2 lg:grid-rows-2"
+            >
               <!-- Paypal -->
               <label
                 for="paypal"
@@ -108,7 +112,7 @@
                     Expires 10&sol;2077
                   </p>
                 </div>
-                <input type="radio" name="payment" id="mastercard" />
+                <input type="radio" name="payment" id="visa" />
               </label>
               <!-- Add Card -->
               <div
@@ -207,7 +211,9 @@
           </button>
         </div>
       </main>
-      <footer class="flex items-end justify-between p-6">
+      <footer
+        class="flex flex-col p-6 sm:flex-row sm:items-end sm:justify-between"
+      >
         <div>
           <h2 class="text-xl font-bold">Biarritz Palace</h2>
           <p class="mb-1 text-xs text-stone-500">
@@ -218,7 +224,9 @@
             1234 Rue de la plage, Biarritz, France
           </p>
         </div>
-        <p class="text-xs text-stone-500">Biarritz Palace &copy; 2024</p>
+        <p class="text-xs text-stone-500 max-sm:mt-4">
+          Biarritz Palace &copy; 2024
+        </p>
       </footer>
     </div>
   </body>

@@ -24,7 +24,7 @@
     />
   </head>
 
-  <body class="min-h-screen bg-stone-100 p-8">
+  <body class="min-h-screen bg-stone-100 p-8 text-slate-950">
     <div class="container mx-auto min-h-screen rounded-xl bg-stone-200">
       <header
         class="flex items-center gap-x-3 rounded-t-xl border-b bg-white p-6"
@@ -32,6 +32,96 @@
         <img src="./assets/img/logo.png" alt="Logo" class="w-6" />
         <h1 class="text-xl font-bold">Biarritz Palace</h1>
       </header>
+      <main class="grid grid-cols-[2fr_1fr] grid-rows-1">
+        <div class="bg-white p-6 text-sm">
+          <a
+            href="#"
+            class="mb-6 flex items-center gap-x-3 font-bold transition-colors hover:text-blue-500"
+          >
+            <i class="fa-solid fa-angle-left fa-sm"></i> Back to the list
+          </a>
+          <h2 class="mb-4 text-lg font-bold">Payment method</h2>
+          <div class="rounded-lg border p-4">
+            <h4 class="mb-6 text-sm font-bold">Saved cards</h4>
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 p-2">
+              <!-- Paypal -->
+              <label
+                for="paypal"
+                class="group flex cursor-pointer items-start gap-x-3 rounded-lg border p-4 transition-colors hover:bg-blue-500"
+              >
+                <i
+                  class="fa-brands fa-paypal text-sky-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Paypal ending by 1234
+                  </h4>
+                  <p
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                  >
+                    Expires 10&sol;2077
+                  </p>
+                </div>
+                <input type="radio" name="payment" id="paypal" />
+              </label>
+              <!-- Master Card -->
+              <label
+                for="mastercard"
+                class="group flex cursor-pointer items-start gap-x-3 rounded-lg border p-4 transition-colors hover:bg-blue-500"
+              >
+                <i
+                  class="fa-brands fa-cc-mastercard text-orange-600 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Master Card ending by 1234
+                  </h4>
+                  <p
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                  >
+                    Expires 10&sol;2077
+                  </p>
+                </div>
+                <input type="radio" name="payment" id="mastercard" />
+              </label>
+              <!-- Visa Card -->
+              <label
+                for="visa"
+                class="group flex cursor-pointer items-start gap-x-3 rounded-lg border p-4 transition-colors hover:bg-blue-500"
+              >
+                <i
+                  class="fa-brands fa-cc-visa text-blue-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Visa ending by 1234
+                  </h4>
+                  <p
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                  >
+                    Expires 10&sol;2077
+                  </p>
+                </div>
+                <input type="radio" name="payment" id="mastercard" />
+              </label>
+              <!-- Add Card -->
+              <div
+                class="flex items-center justify-center gap-x-3 rounded-lg border p-4 font-bold text-blue-500 transition-colors hover:bg-blue-500 hover:text-white"
+              >
+                <a href="#"
+                  ><i class="fa-solid fa-circle-plus mr-3"></i>Add a card</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
